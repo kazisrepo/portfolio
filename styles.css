@@ -16,11 +16,9 @@ header {
   color: white;
 }
 .container {
-  width: 1024px;
-  margin: 0 auto;
   overflow: hidden;
   background: #fff;
-  padding: 5%;
+  padding: 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .header-text-1 {
@@ -113,10 +111,11 @@ p {
 section {
   margin-bottom: 40px;
   text-align: left;
+  padding: 70px;
 }
-.hello-text {
+.strong-text {
   font-family: "Roboto Slab";
-  margin-bottom: 50px;
+  font-weight: 400;
 }
 .elevator-pitch {
   font-family: "Roboto Slab";
@@ -131,6 +130,30 @@ section {
   background-color: #ffe700;
 }
 .kazi-img {
-  width: 200px;
+  width: 70%;
   height: auto;
+}
+p {
+  font-family: var(--body-text-font-family);
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+.technology-icons img {
+  width: auto;
+  height: 180px;
+  padding: 30px;
+}
+.section-gap {
+  margin-bottom: 200px;
+}
+.section-blue {
+  background-color: #001775;
+  color: white;
+}
+
+.section-gray {
+  background-color: #ebebeb;
+}
+.hr-white {
+  border-bottom: 1px solid #f0f0f0;
 }

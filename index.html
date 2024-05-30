@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/fav-icon.png" type="image/png" />
+    <link rel="shortcut icon" href="assets/fav-icon.png" type="image/png" />
+
     <title>Kazi Islam - Portfolio</title>
     <!-- Bootstrap CSS -->
     <link
@@ -10,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,22 +27,22 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="works.html">My Works</a></li>
+          <li><a href="works.html">My works</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="container">
-      <section id="welcome" class="mb-5">
+      <section id="welcome">
         <div class="row">
           <div class="col-4">
             <img src="assets/kazi.png" class="kazi-img" />
           </div>
           <div class="col-8">
-            <p class="hello-text">Hi, I am Kazi.</p>
+            <p class="strong-text mb-5">Hi, I am Kazi.</p>
             <p class="elevator-pitch">
               I am <span class="highlight">passionate</span> about creating
               innovative software solutions that
@@ -46,104 +50,81 @@
               experiences.
             </p>
             <hr />
-            <p></p>
+            <p>
+              My primary focus is .NET software development, but I have also
+              gained experience with Java, Oracle, Python, Node.js, Express.js,
+              and React through numerous personal projects.
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="about-me">
-        <h1>About Me</h1>
-        <p>
-          Hi, I am Kazi. Welcome to my personal portfolio! I am Kazi Zahirul
-          Islam, a dedicated and passionate Software Developer based in Toronto,
-          Canada. With a diverse background in software development, business
-          analysis, and cloud technologies, I strive to create impactful and
-          efficient solutions that meet business needs and enhance user
-          experiences.
-        </p>
-      </section>
-
-      <section id="professional-journey">
-        <h2>Professional Journey</h2>
-        <p>
-          My journey in the tech industry began with a solid foundation in
-          Computing and Information Systems, where I earned both my bachelor's
-          and master's degrees from reputable institutions in the UK, which have
-          been assessed as equivalent to Canadian degrees by WES. Over the
-          years, I have honed my skills and expertise through various roles,
-          contributing to the success of numerous projects.
-        </p>
-        <p>
-          Currently, I am pursuing a program in Artificial Intelligence -
-          Software Engineering Technology at Centennial College to further
-          enhance my knowledge and stay abreast of the latest advancements in
-          technology.
-        </p>
-      </section>
-
-      <section id="experience-achievements">
-        <h2>Experience and Achievements</h2>
-        <p>
-          As a Software Developer at Millennium Freightways Inc., I have played
-          a key role in designing, developing, and maintaining web applications
-          using C#, .NET, SQL Server, HTML, CSS, and JavaScript. My efforts have
-          led to significant improvements in user experiences and increased
-          customer satisfaction. I have also optimized database queries and
-          stored procedures, ensuring efficient data retrieval and storage, and
-          have been commended by senior management for my contributions.
-        </p>
-        <p>
-          Previously, as a Full Stack Developer at Retoll Inc., I designed and
-          maintained high-quality web applications, providing support to
-          end-users and troubleshooting issues. My commitment to staying updated
-          with emerging technologies has consistently enhanced my software
-          development skills.
-        </p>
-        <p>
-          During my tenure as a Senior Business Analyst at Southtech Limited in
-          Bangladesh, I collaborated with various stakeholders to gather and
-          analyze business requirements for financial software solutions. My
-          ability to translate business needs into comprehensive technical
-          specifications ensured that the software solutions aligned with
-          industry best practices.
-        </p>
-      </section>
-
-      <section id="skills-expertise">
-        <h2>Skills and Expertise</h2>
-        <p>
-          I am proficient in a wide range of technologies and tools, including
-          C#, .NET, Java, Python, SQL Server, Entity Framework, HTML, CSS,
-          JavaScript, React, Bootstrap, and Amazon AWS Cloud. My expertise
-          extends to mobile development with Flutter and Dart, and I have a
-          solid understanding of microservice architecture patterns.
-          Additionally, I am skilled in project management, Agile Scrum, and
-          business analysis, making me a versatile professional capable of
-          tackling diverse challenges.
-        </p>
+      <section id="technologies" class="technologies section-blue">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center">
+              <h1 class="header-text-1">Technologies used</h1>
+              <hr class="hr-white" />
+            </div>
+            <div
+              id="technology-icons"
+              class="technology-icons text-center"
+            ></div>
+          </div>
+        </div>
       </section>
 
       <section id="passion-goals">
-        <h2>Passion and Goals</h2>
-        <p>
-          My passion for technology drives me to continuously learn and
-          innovate. I am particularly interested in the potential of artificial
-          intelligence and how it can be leveraged to create smarter, more
-          efficient systems. As I advance in my career, I aim to contribute to
-          projects that not only solve complex problems but also improve the
-          quality of life for users.
-        </p>
+        <div class="row mt-3">
+          <div class="col-7">
+            <p class="strong-text">Passion & goals</p>
+            <p class="elevator-pitch">
+              Driving technological innovation with
+              <span class="highlight"> AI</span> to enhance lives and solve
+              complex problems
+            </p>
+            <hr />
+            <p>
+              My passion for technology drives me to continuously learn and
+              innovate. I am particularly interested in the potential of
+              artificial intelligence and how it can be leveraged to create
+              smarter, more efficient systems. As I advance in my career, I aim
+              to contribute to projects that not only solve complex problems but
+              also improve the quality of life for users.
+            </p>
+          </div>
+          <div class="col-5">
+            <img src="assets/goals.png" style="width: 98%; height: auto" />
+          </div>
+        </div>
       </section>
 
-      <section id="get-in-touch">
-        <h2>Get in Touch</h2>
-        <p>
-          Thank you for visiting my portfolio. I invite you to explore my works
-          and see the projects that reflect my skills and dedication. Feel free
-          to connect with me on GitHub and LinkedIn, or reach out via email for
-          any inquiries or collaborations. Let's create something amazing
-          together!
-        </p>
+      <section id="get-in-touch" class="section-gray">
+        <div class="row">
+          <div class="col-12">
+           
+            <p>
+              Thank you for visiting my portfolio. I invite you to explore my
+              works and see the projects that reflect my skills and dedication.
+              Feel free to connect with me on GitHub and LinkedIn, or reach out
+              via email for any inquiries or collaborations. Let's create
+              something amazing together!
+            </p>
+          </div>
+         
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="strong-text">Get in touch</p>
+            <p>
+              <ul>
+                <li>Email</li>
+                <li>LinkedIn</li>
+                <li>GitHub</li>
+              </ul>
+            </p>
+          </div>
+        </div>
       </section>
     </div>
 
