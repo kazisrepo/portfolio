@@ -17,136 +17,69 @@
       rel="stylesheet"
       href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
     />
-    <script src="index.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="banner">
-        <img src="assets/logo.png" alt="Kazi Islam" class="logo" />
-        <div class="banner-text roboto-thin">
-          <h1 class="header-text-1">Kazi Islam</h1>
-          <p class="occupation">Software Developer | Business Analyst</p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="works.html">My works</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header"></div>
 
     <div class="container">
-      <section id="welcome">
+      <section class="intro">
         <div class="row">
-          <div class="col-4">
-            <img src="assets/kazi.png" class="kazi-img" />
-          </div>
-          <div class="col-8">
-            <p class="strong-text mb-5">Hi, I am Kazi.</p>
-            <p class="elevator-pitch">
-              I am <span class="highlight">passionate</span> about creating
-              innovative software solutions that
-              <span class="highlight">empower</span> businesses and elevate user
-              experiences.
-            </p>
-            <hr />
-            <p>
-              My primary focus is .NET software development, but I have also
-              gained experience with Java, Oracle, Python, Node.js, Express.js,
-              and React through numerous personal projects.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="technologies" class="technologies section-blue">
-        <div class="row">
-          <div class="col-12">
-            <div class="text-center">
-              <h1 class="header-text-1">Technologies used</h1>
-              <hr class="hr-gray" />
-            </div>
-            <div
-              id="technology-icons"
-              class="technology-icons text-center"
-            ></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="passion-goals">
-        <div class="row mt-3">
-          <div class="col-7">
-            <p class="strong-text">Passion & goals</p>
-            <p class="elevator-pitch">
-              Driving technological innovation with
-              <span class="highlight"> AI</span> to enhance lives and solve
-              complex problems
-            </p>
-            <hr />
-            <p>
-              My passion for technology drives me to continuously learn and
-              innovate. I am particularly interested in the potential of
-              artificial intelligence and how it can be leveraged to create
-              smarter, more efficient systems. As I advance in my career, I aim
-              to contribute to projects that not only solve complex problems but
-              also improve the quality of life for users.
-            </p>
-          </div>
           <div class="col-5">
-            <img src="assets/goals.png" style="width: 98%; height: auto" />
+            <img src="assets/contact.png" style="width: 50%; height: auto" />
           </div>
-        </div>
-      </section>
-
-      <section id="get-in-touch" class="section-gray">
-        <div class="row">
-          <div class="col-12">
+          <div class="col-7">
             <p>
-              Thank you for visiting my portfolio. I invite you to explore my
-              works and see the projects that reflect my skills and dedication.
-              Feel free to connect with me on GitHub and LinkedIn, or reach out
-              via email for any inquiries or collaborations.
-              <span class="strong-text">
-                Let's create something amazing together!</span
-              >
+              Please feel free to send me a message, and I will get back to you
+              as soon as possible.
             </p>
-          </div>
-        </div>
-        <hr />
-        <div class="row bottom-nav mt-5">
-          <div class="col-8">
-            <ul>
-              <li><i class="fa fa-envelope-o pr-1"></i> LinkedIn</li>
-              <li><i class="fa fa-envelope-o pr-1"></i> GitHub</li>
-              <li><i class="fa fa-envelope-o pr-1"></i> Email</li>
-            </ul>
-          </div>
+            <hr class="mb-5" />
 
-          <div class="col-4 text-right">
-            <a href="credits.html">Credits and acknowledgements</a>
+            <form
+              class="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              target="_blank"
+            >
+              <div class="mb-4">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="93ae4b81-b25f-4f68-b2c2-e1ff66cc82e5"
+                />
+                <label class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" required />
+              </div>
+              <div class="mb-4">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label class="form-label">Message</label>
+                <textarea
+                  rows="6"
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-4">
+                <button class="btn btn-lg btn-dark pr-5 pl-5" type="submit">
+                  Send
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
     </div>
-
-    <footer>
-      <p>
-        This website design was inspired by the creative work of
-        <a href="https://www.aarronwalter.com/" target="_blank">Aarron Walter</a
-        >. <br />
-        Images from
-        <a href="https://www.unsplash.com/" target="_blank">unsplash.com</a> |
-        Icons from
-        <a href="https://www.icons8.com/" target="_blank">icons8.com</a> |
-        Thanks to ChatGPT
-      </p>
-      <hr class="hr-gray" />
-      <p>&copy; 2024 Kazi Islam. All rights reserved.</p>
-    </footer>
+    <button id="btnScrollToTop" class="float-button">Top</button>
+    <div id="footer"></div>
   </body>
 </html>

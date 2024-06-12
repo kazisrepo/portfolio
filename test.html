@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .label {
+        display: inline-block;
+        max-width: 20ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <label
+      class="label"
+      title="This is a very long text that should be truncated to fit within 20 characters."
+    >
+      This is a very long text that should be truncated to fit within 20
+      characters.
+    </label>
+  </body>
+</html>

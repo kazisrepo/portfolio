@@ -17,30 +17,14 @@
       rel="stylesheet"
       href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
     />
-    <script src="index.js" defer></script>
+    <script src="js/works.js" defer></script>
+    <script src="js/common.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="banner">
-        <img src="assets/logo.png" alt="Kazi Islam" class="logo" />
-        <div class="banner-text roboto-thin">
-          <h1 class="header-text-1">Kazi Islam</h1>
-          <p class="occupation">Software Developer | Business Analyst</p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="works.html">My works</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header"></div>
 
     <div class="container">
-      <section class="intro">
+      <section class="intro pb-1">
         <div class="row">
           <div class="col-5">
             <img src="assets/gears.png" style="width: 80%; height: auto" />
@@ -59,108 +43,9 @@
         </div>
       </section>
 
-      <section class="projects project">
-        <div class="row">
-          <div class="col-5">
-            <img
-              src="project1-image.jpg"
-              alt="Project 1 Image"
-              class="project-image"
-            />
-          </div>
-          <div class="col-7">
-            <div>
-              <h3>Project Title 1</h3>
-              <p>
-                <strong>Description:</strong> Brief description of the project.
-              </p>
-              <p>
-                <strong>Responsibilities:</strong> Detailed responsibilities in
-                this project.
-              </p>
-              <p>
-                <strong>Technologies Used:</strong> List of technologies used.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="projects project-alternate">
-        <div class="row">
-          <div class="col-5">
-            <img
-              src="project1-image.jpg"
-              alt="Project 1 Image"
-              class="project-image"
-            />
-          </div>
-          <div class="col-7">
-            <div>
-              <h3>Project Title 1</h3>
-              <p>
-                <strong>Description:</strong> Brief description of the project.
-              </p>
-              <p>
-                <strong>Responsibilities:</strong> Detailed responsibilities in
-                this project.
-              </p>
-              <p>
-                <strong>Technologies Used:</strong> List of technologies used.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="get-in-touch" class="section-gray">
-        <div class="row">
-          <div class="col-12">
-            <p>
-              Thank you for visiting my portfolio. I invite you to explore my
-              works and see the projects that reflect my skills and dedication.
-              Feel free to connect with me on GitHub and LinkedIn, or reach out
-              via email for any inquiries or collaborations.
-              <span class="strong-text">
-                Let's create something amazing together!</span
-              >
-            </p>
-          </div>
-        </div>
-        <hr />
-        <div class="row bottom-nav mt-5">
-          <div class="col-8">
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/kzislam/" target="_blank">
-                  <i class="fa fa-linkedin-square pr-2"></i>LinkedIn</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/kazisrepo" target="_blank">
-                  <i class="fa fa-github pr-2"></i>GitHub</a
-                >
-              </li>
-              <li>
-                <a href="contact.html">
-                  <i class="fa fa-envelope-o pr-2"></i>Email</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-4 text-right">
-            <a href="credits.html"
-              ><i class="fa fa-thumbs-o-up pr-2"></i>Credits and
-              acknowledgements</a
-            >
-          </div>
-        </div>
-      </section>
+      <section class="projects p-3" id="section-projects"></section>
     </div>
-
-    <footer>
-      <hr class="hr-gray" />
-      <p>&copy; 2024 Kazi Islam. All rights reserved.</p>
-    </footer>
+    <button id="btnScrollToTop" class="float-button">Top</button>
+    <div id="footer"></div>
   </body>
 </html>

@@ -17,136 +17,112 @@
       rel="stylesheet"
       href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
     />
-    <script src="index.js" defer></script>
+    <script src="js/resume.js" defer></script>
+    <script src="js/common.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="banner">
-        <img src="assets/logo.png" alt="Kazi Islam" class="logo" />
-        <div class="banner-text roboto-thin">
-          <h1 class="header-text-1">Kazi Islam</h1>
-          <p class="occupation">Software Developer | Business Analyst</p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="works.html">My works</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
+    <div id="header"></div>
     <div class="container">
-      <section id="welcome">
-        <div class="row">
-          <div class="col-4">
-            <img src="assets/kazi.png" class="kazi-img" />
-          </div>
-          <div class="col-8">
-            <p class="strong-text mb-5">Hi, I am Kazi.</p>
-            <p class="elevator-pitch">
-              I am <span class="highlight">passionate</span> about creating
-              innovative software solutions that
-              <span class="highlight">empower</span> businesses and elevate user
-              experiences.
-            </p>
-            <hr />
-            <p>
-              My primary focus is .NET software development, but I have also
-              gained experience with Java, Oracle, Python, Node.js, Express.js,
-              and React through numerous personal projects.
-            </p>
-          </div>
+      <section id="resume">
+        <div class="text-right mb-5 mr-1">
+          <a
+            class="btn btn-sm btn-outline-dark"
+            href="assets/Resume_Kazi_Islam_SoftwareDeveloper.pdf"
+            target="_blank"
+          >
+            <i class="fa fa-file"></i> Download Resume
+          </a>
         </div>
-      </section>
-
-      <section id="technologies" class="technologies section-blue">
-        <div class="row">
-          <div class="col-12">
-            <div class="text-center">
-              <h1 class="header-text-1">Technologies used</h1>
-              <hr class="hr-gray" />
+        <div class="resume-content mt-5">
+          <div class="content-left mb-5">
+            <h3 class="strong-text text-right">Experience</h3>
+            <div>
+              <h6 class="strong-text text-right mt-5">Software Developer</h6>
+              <p class="strong-text text-right job-location">
+                Millenium Freightways Inc. <br />2020 - Date
+              </p>
             </div>
+            <div style="margin-top: 110px !important">
+              <h6 class="strong-text text-right">Software Developer</h6>
+              <p class="strong-text text-right job-location">
+                Retoll Inc. <br />2018 - 2020
+              </p>
+            </div>
+            <div style="margin-top: 65px !important">
+              <h6 class="strong-text text-right">Business Analyst</h6>
+              <p class="strong-text text-right job-location">
+                Southtech Limited <br />2010 - 2016
+              </p>
+            </div>
+            <h3 class="strong-text text-right mt-5 pt-5">Education</h3>
+            <div style="margin-top: 40px !important">
+              <h6 class="strong-text text-right">Msc. Information Systems</h6>
+              <p class="strong-text text-right job-location">2005 - 2006</p>
+            </div>
+            <div style="margin-top: 40px !important">
+              <h6 class="strong-text text-right">Bsc. Information Systems</h6>
+              <p class="strong-text text-right job-location">2002 - 2004</p>
+            </div>
+          </div>
+          <div class="divider">
             <div
-              id="technology-icons"
-              class="technology-icons text-center"
+              style="width: 1px; height: 100%; background-color: rgb(0, 0, 0)"
             ></div>
           </div>
-        </div>
-      </section>
-
-      <section id="passion-goals">
-        <div class="row mt-3">
-          <div class="col-7">
-            <p class="strong-text">Passion & goals</p>
-            <p class="elevator-pitch">
-              Driving technological innovation with
-              <span class="highlight"> AI</span> to enhance lives and solve
-              complex problems
-            </p>
+          <div class="content-middle">
+            <div style="margin-top: 85px">
+              <div class="resume-dot"></div>
+              <p>
+                Collaborated with stakeholders to design, develop, and maintain
+                web applications using C# .NET, SQL Server, HTML, CSS, and
+                JavaScript, optimized database queries and stored procedures,
+                implemented features to enhance user experience, and ensured
+                reliable performance through troubleshooting and debugging.
+              </p>
+            </div>
+            <div style="margin-top: 48px">
+              <div class="resume-dot"></div>
+              <p>
+                Designed, developed, and maintained responsive web applications
+                using C# .NET, JavaScript, and Bootstrap, while providing
+                technical support and staying updated with industry best
+                practices.
+              </p>
+            </div>
+            <div style="margin-top: 48px">
+              <div class="resume-dot"></div>
+              <p>
+                Collaborated with finance, IT, and end-users to gather and
+                analyze business requirements for financial software solutions,
+                leading requirements gathering, conducting interviews,
+                facilitating workshops, and translating needs into technical
+                specifications and user stories.
+              </p>
+            </div>
+            <div style="margin-top: 132px">
+              <div class="resume-dot"></div>
+              <p>
+                Canadian equivalent master’s degree - assessed by WES (MSc.
+                Information Systems Development, UK)
+              </p>
+            </div>
+            <div style="margin-top: 50px">
+              <div class="resume-dot"></div>
+              <p>
+                Canadian equivalent bachelor's degree - assessed by WES (Bsc.
+                Computing & Information Systems, UK)
+              </p>
+            </div>
+          </div>
+          <div class="content-right">
+            <h6 class="strong-text mb-3">Technical proficiency</h6>
             <hr />
-            <p>
-              My passion for technology drives me to continuously learn and
-              innovate. I am particularly interested in the potential of
-              artificial intelligence and how it can be leveraged to create
-              smarter, more efficient systems. As I advance in my career, I aim
-              to contribute to projects that not only solve complex problems but
-              also improve the quality of life for users.
-            </p>
-          </div>
-          <div class="col-5">
-            <img src="assets/goals.png" style="width: 98%; height: auto" />
-          </div>
-        </div>
-      </section>
-
-      <section id="get-in-touch" class="section-gray">
-        <div class="row">
-          <div class="col-12">
-            <p>
-              Thank you for visiting my portfolio. I invite you to explore my
-              works and see the projects that reflect my skills and dedication.
-              Feel free to connect with me on GitHub and LinkedIn, or reach out
-              via email for any inquiries or collaborations.
-              <span class="strong-text">
-                Let's create something amazing together!</span
-              >
-            </p>
-          </div>
-        </div>
-        <hr />
-        <div class="row bottom-nav mt-5">
-          <div class="col-8">
-            <ul>
-              <li><i class="fa fa-envelope-o pr-1"></i> LinkedIn</li>
-              <li><i class="fa fa-envelope-o pr-1"></i> GitHub</li>
-              <li><i class="fa fa-envelope-o pr-1"></i> Email</li>
-            </ul>
-          </div>
-
-          <div class="col-4 text-right">
-            <a href="credits.html">Credits and acknowledgements</a>
+            <div id="skill-section" class="skill-section"></div>
           </div>
         </div>
       </section>
     </div>
-
-    <footer>
-      <p>
-        This website design was inspired by the creative work of
-        <a href="https://www.aarronwalter.com/" target="_blank">Aarron Walter</a
-        >. <br />
-        Images from
-        <a href="https://www.unsplash.com/" target="_blank">unsplash.com</a> |
-        Icons from
-        <a href="https://www.icons8.com/" target="_blank">icons8.com</a> |
-        Thanks to ChatGPT
-      </p>
-      <hr class="hr-gray" />
-      <p>&copy; 2024 Kazi Islam. All rights reserved.</p>
-    </footer>
+    <button id="btnScrollToTop" class="float-button">Top</button>
+    <div id="footer"></div>
   </body>
 </html>
