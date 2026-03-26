@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("footer").innerHTML = data;
+      const year = document.getElementById("year");
+      if (year) {
+        year.innerText = new Date().getFullYear();
+      }
     });
 });
 
