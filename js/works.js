@@ -1,23 +1,37 @@
 let projectSections = document.getElementById("section-projects");
 const projects = [
   {
-    imageSrc: "",
-    projectTitle: "Project 1 - See Live",
-    repoLink:
-      "https://github.com/kazisrepo/portfolio/tree/main/projects/bug-smasher/asdasdad-asdas-dasd-asd-asdasdasd-kjhjkh-khkhj-hkjhkk",
-    technologyUsed: "C#",
-    responsibilities: "Developer",
-    projectDescription: "Logistics",
+    imageSrc: "assets/no-image.png",
+    projectTitle: "Expense Tracker (Personal Project)",
+    repoLink: "#",
+    technologyUsed:
+      "C#, .NET, Angular, SQL Server, Azure Cloud, GitHub Actions, CI/CD",
+    responsibilities:
+      "Developed a functional expense tracker application for drivers. Responsible for the full development lifecycle, including requirement elicitation, design, development, testing, and automation setup.",
+    projectDescription:
+      "A personal project focused on tracking and managing expenses efficiently for drivers.",
     projectLink: "#",
   },
   {
-    imageSrc: "",
-    projectTitle: "Project 2",
-    repoLink: "#",
-    technologyUsed: "JS, Java",
-    responsibilities: "Dev",
-    projectDescription: "Test project",
-    projectLink: "#",
+    imageSrc: "assets/no-image.png",
+    projectTitle: "Logistics Management Back Office",
+    repoLink: "Repo: #privaterepo",
+    technologyUsed: "C#, .NET, SQL Server, HTML, CSS, jQuery, Bootstrap",
+    responsibilities:
+      "Worked across all stages of product development, from requirement analysis to deployment and maintenance.",
+    projectDescription:
+      "A web-based application designed to streamline back-office operations, including order creation, delivery tracking, invoicing, payment collection, and reporting.",
+    projectLink: "URL: #private",
+  },
+  {
+    imageSrc: "assets/no-image.png",
+    projectTitle: "Bug Smasher (Fun Project)",
+    repoLink: "Repo: #N/A",
+    technologyUsed: "HTML, CSS, JavaScript",
+    responsibilities: "JavaScript fun project was built as an assignment.",
+    projectDescription:
+      "Bug smasher game; every time you hit the bug moves faster to make it difficult for you to smash.",
+    projectLink: "/fun-projects/bug-smasher/index.html",
   },
 ];
 
@@ -29,7 +43,7 @@ const createProjectRow = (
   responsibilities,
   projectDescription,
   projectLink,
-  index
+  index,
 ) => {
   const row = document.createElement("div");
   row.classList.add("mb-3");
@@ -95,7 +109,7 @@ projects.forEach((element, index) => {
     element.responsibilities,
     element.projectDescription,
     element.projectLink,
-    index
+    index,
   );
   projectSections.appendChild(row);
 });
