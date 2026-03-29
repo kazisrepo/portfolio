@@ -26,7 +26,7 @@ const projects = [
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Bug Smasher (Fun Project)",
-    repoLink: "#N/A",
+    repoLink: "https://github.com/kazisrepo/portfolio",
     technologyUsed: "HTML, CSS, JavaScript",
     responsibilities:
       "Developed an interactive JavaScript-based game as part of an assignment.",
@@ -37,7 +37,7 @@ const projects = [
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Etch A Sketch (Fun Project)",
-    repoLink: "#N/A",
+    repoLink: "https://github.com/kazisrepo/portfolio",
     technologyUsed: "HTML, CSS, JavaScript",
     responsibilities:
       "Developed an interactive drawing application using JavaScript as part of an assignment.",
@@ -48,7 +48,7 @@ const projects = [
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Rock Paper Scissors (Fun Project)",
-    repoLink: "#N/A",
+    repoLink: "https://github.com/kazisrepo/portfolio",
     technologyUsed: "HTML, JavaScript",
     responsibilities:
       "Developed a simple interactive game using JavaScript as part of an assignment.",
