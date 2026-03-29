@@ -31,7 +31,7 @@ const projects = [
     responsibilities: "JavaScript fun project was built as an assignment.",
     projectDescription:
       "Bug smasher game; every time you hit the bug moves faster to make it difficult for you to smash.",
-    projectLink: "/fun-projects/bug-smasher/index.html",
+    projectLink: "/fun-projects/bug-smasher/",
   },
   {
     imageSrc: "assets/no-image.png",
@@ -42,6 +42,15 @@ const projects = [
     projectDescription:
       "Draw grids with your mouse-single or random multi color.",
     projectLink: "/fun-projects/etch-a-sketch/",
+  },
+  {
+    imageSrc: "assets/no-image.png",
+    projectTitle: "Rock Paper Scissor (Fun Project)",
+    repoLink: "Repo: #N/A",
+    technologyUsed: "HTML, JavaScript",
+    responsibilities: "JavaScript fun project was built as an assignment.",
+    projectDescription: "Rock paper scissor game. ",
+    projectLink: "/fun-projects/rock-paper-scissor/",
   },
 ];
 
