@@ -14,19 +14,19 @@ const projects = [
   },
   {
     imageSrc: "assets/no-image.png",
-    projectTitle: "Logistics Management Back Office",
-    repoLink: "GitHub Repo: N/A",
+    projectTitle: "Logistics Management Back Office (Client Project)",
+    repoLink: "#N/A",
     technologyUsed: "C#, .NET, SQL Server, HTML, CSS, jQuery, Bootstrap",
     responsibilities:
       "Contributed to all stages of product development, from requirement analysis to deployment and ongoing maintenance.",
     projectDescription:
       "A web-based application designed to streamline back-office operations, including order creation, delivery tracking, invoicing, payment collection, and reporting.",
-    projectLink: "URL: #private",
+    projectLink: "#N/A",
   },
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Bug Smasher (Fun Project)",
-    repoLink: "Repo: N/A",
+    repoLink: "#N/A",
     technologyUsed: "HTML, CSS, JavaScript",
     responsibilities:
       "Developed an interactive JavaScript-based game as part of an assignment.",
@@ -37,7 +37,7 @@ const projects = [
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Etch A Sketch (Fun Project)",
-    repoLink: "Repo: N/A",
+    repoLink: "#N/A",
     technologyUsed: "HTML, CSS, JavaScript",
     responsibilities:
       "Developed an interactive drawing application using JavaScript as part of an assignment.",
@@ -48,7 +48,7 @@ const projects = [
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Rock Paper Scissors (Fun Project)",
-    repoLink: "Repo: N/A",
+    repoLink: "#N/A",
     technologyUsed: "HTML, JavaScript",
     responsibilities:
       "Developed a simple interactive game using JavaScript as part of an assignment.",
@@ -101,7 +101,7 @@ const createProjectRow = (
   paraDiv.appendChild(titleParaLink);
 
   const repoPara = document.createElement("p");
-  repoPara.innerHTML = `<strong>Repo:</strong> ${repoLink}`;
+  repoPara.innerHTML = `<strong>Repo: </strong> ${repoLink}`;
   const repoParaLink = document.createElement("a");
   repoParaLink.href = repoLink;
   //repoParaLink.classList.add("");
@@ -109,13 +109,13 @@ const createProjectRow = (
   paraDiv.appendChild(repoParaLink);
 
   const para2 = document.createElement("p");
-  para2.innerHTML = `<strong>Technology used:</strong> ${technologyUsed}`;
+  para2.innerHTML = `<strong>Technology used: </strong> ${technologyUsed}`;
   paraDiv.appendChild(para2);
   const para3 = document.createElement("p");
-  para3.innerHTML = `<strong>Responsibilities:</strong> ${responsibilities}`;
+  para3.innerHTML = `<strong>Responsibilities: </strong> ${responsibilities}`;
   paraDiv.appendChild(para3);
   const para4 = document.createElement("p");
-  para4.innerHTML = `<strong>Description:</strong> ${projectDescription}`;
+  para4.innerHTML = `<strong>Description: </strong> ${projectDescription}`;
   paraDiv.appendChild(para4);
   col2.appendChild(paraDiv);
   row.appendChild(col2);
