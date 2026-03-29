@@ -15,7 +15,7 @@ const projects = [
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Logistics Management Back Office",
-    repoLink: "Repo: #privaterepo",
+    repoLink: "#GitHub Repo: N/A",
     technologyUsed: "C#, .NET, SQL Server, HTML, CSS, jQuery, Bootstrap",
     responsibilities:
       "Worked across all stages of product development, from requirement analysis to deployment and maintenance.",
@@ -32,6 +32,16 @@ const projects = [
     projectDescription:
       "Bug smasher game; every time you hit the bug moves faster to make it difficult for you to smash.",
     projectLink: "/fun-projects/bug-smasher/index.html",
+  },
+  {
+    imageSrc: "assets/no-image.png",
+    projectTitle: "Etch a sketch (Fun Project)",
+    repoLink: "Repo: #N/A",
+    technologyUsed: "HTML, CSS, JavaScript",
+    responsibilities: "JavaScript fun project was built as an assignment.",
+    projectDescription:
+      "Draw grids with your mouse-single or random multi color.",
+    projectLink: "/fun-projects/etch-a-sketch/",
   },
 ];
 
