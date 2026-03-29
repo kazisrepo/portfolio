@@ -3,22 +3,22 @@ const projects = [
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Expense Tracker (Personal Project)",
-    repoLink: "#",
+    repoLink: "https://github.com/kazisrepo/expensetracker",
     technologyUsed:
       "C#, .NET, Angular, SQL Server, Azure Cloud, GitHub Actions, CI/CD",
     responsibilities:
-      "Developed a functional expense tracker application for drivers. Responsible for the full development lifecycle, including requirement elicitation, design, development, testing, and automation setup.",
+      "Developed a functional expense tracker application for drivers. Responsible for the full software development lifecycle, including requirement elicitation, design, development, testing, and automation setup.",
     projectDescription:
-      "A personal project focused on tracking and managing expenses efficiently for drivers.",
+      "A personal project focused on efficiently tracking and managing expenses for drivers.",
     projectLink: "#",
   },
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Logistics Management Back Office",
-    repoLink: "#GitHub Repo: N/A",
+    repoLink: "GitHub Repo: N/A",
     technologyUsed: "C#, .NET, SQL Server, HTML, CSS, jQuery, Bootstrap",
     responsibilities:
-      "Worked across all stages of product development, from requirement analysis to deployment and maintenance.",
+      "Contributed to all stages of product development, from requirement analysis to deployment and ongoing maintenance.",
     projectDescription:
       "A web-based application designed to streamline back-office operations, including order creation, delivery tracking, invoicing, payment collection, and reporting.",
     projectLink: "URL: #private",
@@ -26,30 +26,34 @@ const projects = [
   {
     imageSrc: "assets/no-image.png",
     projectTitle: "Bug Smasher (Fun Project)",
-    repoLink: "Repo: #N/A",
+    repoLink: "Repo: N/A",
     technologyUsed: "HTML, CSS, JavaScript",
-    responsibilities: "JavaScript fun project was built as an assignment.",
+    responsibilities:
+      "Developed an interactive JavaScript-based game as part of an assignment.",
     projectDescription:
-      "Bug smasher game; every time you hit the bug moves faster to make it difficult for you to smash.",
+      "A bug-smasher game where the bug moves faster after each hit, increasing the difficulty level.",
     projectLink: "/fun-projects/bug-smasher/",
   },
   {
     imageSrc: "assets/no-image.png",
-    projectTitle: "Etch a sketch (Fun Project)",
-    repoLink: "Repo: #N/A",
+    projectTitle: "Etch A Sketch (Fun Project)",
+    repoLink: "Repo: N/A",
     technologyUsed: "HTML, CSS, JavaScript",
-    responsibilities: "JavaScript fun project was built as an assignment.",
+    responsibilities:
+      "Developed an interactive drawing application using JavaScript as part of an assignment.",
     projectDescription:
-      "Draw grids with your mouse-single or random multi color.",
+      "A grid-based drawing tool that allows users to draw using single or randomly generated colors.",
     projectLink: "/fun-projects/etch-a-sketch/",
   },
   {
     imageSrc: "assets/no-image.png",
-    projectTitle: "Rock Paper Scissor (Fun Project)",
-    repoLink: "Repo: #N/A",
+    projectTitle: "Rock Paper Scissors (Fun Project)",
+    repoLink: "Repo: N/A",
     technologyUsed: "HTML, JavaScript",
-    responsibilities: "JavaScript fun project was built as an assignment.",
-    projectDescription: "Rock paper scissor game. ",
+    responsibilities:
+      "Developed a simple interactive game using JavaScript as part of an assignment.",
+    projectDescription:
+      "A classic rock-paper-scissors game with basic user interaction.",
     projectLink: "/fun-projects/rock-scissor-paper/",
   },
 ];
