@@ -10,7 +10,7 @@ const projects = [
       "Developed a functional expense tracker application for drivers. Responsible for the full software development lifecycle, including requirement elicitation, design, development, testing, and automation setup.",
     projectDescription:
       "A personal project focused on efficiently tracking and managing expenses for drivers.",
-    projectLink: "#",
+    projectLink: "#Coming Soon",
   },
   {
     imageSrc: "assets/no-image.png",
