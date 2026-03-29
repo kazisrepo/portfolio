@@ -2,8 +2,8 @@ let projectSections = document.getElementById("section-projects");
 const projects = [
   {
     imageSrc: "assets/no-image.png",
-    projectTitle: "Expense Tracker (Personal Project)",
-    repoLink: "https://github.com/kazisrepo/expensetracker",
+    projectTitle: "Expense Tracker (Personal Project-In progress)",
+    repoLink: "https://github.com/kazisrepo/expensetracker/wiki",
     technologyUsed:
       "C#, .NET, Angular, SQL Server, Azure Cloud, GitHub Actions, CI/CD",
     responsibilities:
@@ -78,7 +78,7 @@ const createProjectRow = (
   }
 
   const col1 = document.createElement("div");
-  col1.classList.add("col-2");
+  col1.classList.add("col-md-2");
   const img = document.createElement("img");
   img.src = imageSrc;
   img.classList.add("project-image");
@@ -89,7 +89,7 @@ const createProjectRow = (
   row.appendChild(col1);
 
   const col2 = document.createElement("div");
-  col2.classList.add("col-10");
+  col2.classList.add("col-md-10");
   const paraDiv = document.createElement("div");
   const titlePara = document.createElement("h5");
   titlePara.style.paddingTop = "10px";
