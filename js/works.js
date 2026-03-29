@@ -50,7 +50,7 @@ const projects = [
     technologyUsed: "HTML, JavaScript",
     responsibilities: "JavaScript fun project was built as an assignment.",
     projectDescription: "Rock paper scissor game. ",
-    projectLink: "/fun-projects/rock-paper-scissor/",
+    projectLink: "/fun-projects/rock-scissor-paper/",
   },
 ];
 
