@@ -101,7 +101,7 @@ const createProjectRow = (
   paraDiv.appendChild(titleParaLink);
 
   const repoPara = document.createElement("p");
-  repoPara.innerHTML = repoLink;
+  repoPara.innerHTML = `<strong>Repo:</strong> ${repoLink}`;
   const repoParaLink = document.createElement("a");
   repoParaLink.href = repoLink;
   //repoParaLink.classList.add("");
