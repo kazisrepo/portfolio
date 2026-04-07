@@ -1,26 +1,50 @@
 let projectSections = document.getElementById("section-projects");
+
 const projects = [
   {
     imageSrc: "assets/no-image.png",
-    projectTitle: "Expense Tracker (Personal Project-In progress)",
+    projectTitle: "Expense Tracker (In Progress)",
     repoLink: "https://github.com/kazisrepo/expensetracker/wiki",
     technologyUsed:
-      "C#, .NET, Angular, SQL Server, Azure Cloud, GitHub Actions, CI/CD",
+      "C# .NET, React, SQL Server, Azure Cloud, GitHub Actions, CI/CD, Onion Architecture",
     responsibilities:
-      "Developed a functional expense tracker application for drivers. Responsible for the full software development lifecycle, including requirement elicitation, design, development, testing, and automation setup.",
+      "Developed an expense tracking application for drivers, handling the full software development lifecycle including requirements gathering, system design, development, testing, and CI/CD automation.",
     projectDescription:
-      "A personal project focused on efficiently tracking and managing expenses for drivers.",
+      "An application designed to efficiently track and manage expenses for drivers.",
     projectLink: "#ComingSoon",
   },
   {
     imageSrc: "assets/no-image.png",
-    projectTitle: "Logistics Management Back Office (Client Project)",
+    projectTitle: "Logistics Management Back Office",
     repoLink: "#N/A",
-    technologyUsed: "C#, .NET, SQL Server, HTML, CSS, jQuery, Bootstrap",
+    technologyUsed: "C# .NET, SQL Server, React, Monolithic Architecture",
     responsibilities:
-      "Contributed to all stages of product development, from requirement analysis to deployment and ongoing maintenance.",
+      "Independently developed and maintained the application across all stages of the product lifecycle, from requirements analysis and implementation to deployment and ongoing support.",
     projectDescription:
-      "A web-based application designed to streamline back-office operations, including order creation, delivery tracking, invoicing, payment collection, and reporting.",
+      "A web-based solution designed to streamline back-office operations, including order creation, delivery tracking, invoicing, payment collection, and reporting.",
+    projectLink: "#N/A",
+  },
+  {
+    imageSrc: "assets/no-image.png",
+    projectTitle: "Property Management System",
+    repoLink: "#N/A",
+    technologyUsed: "C# .NET, SQL Server, Angular, Microservices Architecture",
+    responsibilities:
+      "Contributed to all phases of development, including requirements analysis, feature implementation, deployment, and ongoing maintenance.",
+    projectDescription:
+      "A web-based application for property listings, request submissions, and an internal tenant portal.",
+    projectLink: "#N/A",
+  },
+  {
+    imageSrc: "assets/no-image.png",
+    projectTitle: "Online Learning Platform",
+    repoLink: "#N/A",
+    technologyUsed:
+      "C# .NET, SQL Server, jQuery, HTML, CSS, Monolithic MVC Architecture",
+    responsibilities:
+      "Resolved existing defects and supported the production release of the application.",
+    projectDescription:
+      "A web-based marketplace platform where learners can connect with subject matter experts for individual or group learning sessions.",
     projectLink: "#N/A",
   },
   {
@@ -29,9 +53,9 @@ const projects = [
     repoLink: "https://github.com/kazisrepo/portfolio",
     technologyUsed: "HTML, CSS, JavaScript",
     responsibilities:
-      "Developed an interactive JavaScript-based game as part of an assignment.",
+      "Developed an interactive JavaScript-based game as part of an academic assignment.",
     projectDescription:
-      "A bug-smasher game where the bug moves faster after each hit, increasing the difficulty level.",
+      "A bug-smasher game in which the target accelerates after each hit, increasing difficulty progressively.",
     projectLink: "/fun-projects/bug-smasher/",
   },
   {
@@ -40,7 +64,7 @@ const projects = [
     repoLink: "https://github.com/kazisrepo/portfolio",
     technologyUsed: "HTML, CSS, JavaScript",
     responsibilities:
-      "Developed an interactive drawing application using JavaScript as part of an assignment.",
+      "Built an interactive drawing application using JavaScript as part of an academic assignment.",
     projectDescription:
       "A grid-based drawing tool that allows users to draw using single or randomly generated colors.",
     projectLink: "/fun-projects/etch-a-sketch/",
@@ -51,9 +75,9 @@ const projects = [
     repoLink: "https://github.com/kazisrepo/portfolio",
     technologyUsed: "HTML, JavaScript",
     responsibilities:
-      "Developed a simple interactive game using JavaScript as part of an assignment.",
+      "Implemented a simple interactive game using JavaScript as part of an academic assignment.",
     projectDescription:
-      "A classic rock-paper-scissors game with basic user interaction.",
+      "A classic rock-paper-scissors game featuring basic user interaction.",
     projectLink: "/fun-projects/rock-scissor-paper/",
   },
 ];
@@ -69,69 +93,68 @@ const createProjectRow = (
   index,
 ) => {
   const row = document.createElement("div");
-  row.classList.add("mb-3");
-  row.classList.add("row");
-  if (index % 2 === 0) {
-    row.classList.add("project");
-  } else {
-    row.classList.add("project-alternate");
-  }
+  row.classList.add("mb-3", "row");
+  row.classList.add(index % 2 === 0 ? "project" : "project-alternate");
 
   const col1 = document.createElement("div");
   col1.classList.add("col-md-2");
+
   const img = document.createElement("img");
   img.src = imageSrc;
   img.classList.add("project-image");
+
   const imgLink = document.createElement("a");
   imgLink.href = projectLink;
   imgLink.appendChild(img);
+
   col1.appendChild(imgLink);
   row.appendChild(col1);
 
   const col2 = document.createElement("div");
   col2.classList.add("col-md-10");
+
   const paraDiv = document.createElement("div");
-  const titlePara = document.createElement("h5");
-  titlePara.style.paddingTop = "10px";
-  titlePara.style.paddingBottom = "10px";
-  titlePara.innerHTML = projectTitle;
-  const titleParaLink = document.createElement("a");
-  titleParaLink.href = projectLink;
-  titleParaLink.appendChild(titlePara);
-  paraDiv.appendChild(titleParaLink);
+
+  const title = document.createElement("h5");
+  title.style.padding = "10px 0";
+  title.innerHTML = projectTitle;
+
+  const titleLink = document.createElement("a");
+  titleLink.href = projectLink;
+  titleLink.appendChild(title);
+  paraDiv.appendChild(titleLink);
 
   const repoPara = document.createElement("p");
-  repoPara.innerHTML = `<strong>Repo: </strong> ${repoLink}`;
-  const repoParaLink = document.createElement("a");
-  repoParaLink.href = repoLink;
-  //repoParaLink.classList.add("");
-  repoParaLink.appendChild(repoPara);
-  paraDiv.appendChild(repoParaLink);
+  repoPara.innerHTML = `<strong>Repo:</strong> ${repoLink}`;
+  paraDiv.appendChild(repoPara);
 
-  const para2 = document.createElement("p");
-  para2.innerHTML = `<strong>Technology used: </strong> ${technologyUsed}`;
-  paraDiv.appendChild(para2);
-  const para3 = document.createElement("p");
-  para3.innerHTML = `<strong>Responsibilities: </strong> ${responsibilities}`;
-  paraDiv.appendChild(para3);
-  const para4 = document.createElement("p");
-  para4.innerHTML = `<strong>Description: </strong> ${projectDescription}`;
-  paraDiv.appendChild(para4);
+  const techPara = document.createElement("p");
+  techPara.innerHTML = `<strong>Technology Used:</strong> ${technologyUsed}`;
+  paraDiv.appendChild(techPara);
+
+  const respPara = document.createElement("p");
+  respPara.innerHTML = `<strong>Responsibilities:</strong> ${responsibilities}`;
+  paraDiv.appendChild(respPara);
+
+  const descPara = document.createElement("p");
+  descPara.innerHTML = `<strong>Description:</strong> ${projectDescription}`;
+  paraDiv.appendChild(descPara);
+
   col2.appendChild(paraDiv);
   row.appendChild(col2);
 
   return row;
 };
 
-projects.forEach((element, index) => {
+projects.forEach((project, index) => {
   const row = createProjectRow(
-    element.imageSrc,
-    element.projectTitle,
-    element.repoLink,
-    element.technologyUsed,
-    element.responsibilities,
-    element.projectDescription,
-    element.projectLink,
+    project.imageSrc,
+    project.projectTitle,
+    project.repoLink,
+    project.technologyUsed,
+    project.responsibilities,
+    project.projectDescription,
+    project.projectLink,
     index,
   );
   projectSections.appendChild(row);
